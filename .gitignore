@@ -1,4 +1,11 @@
+# Lambda Layer dependencies
+yfinance-layer/
+yfinance-layer.zip
+
+# Python
 __pycache__/
 *.pyc
+
+# Environment / secrets
 .env
-venv/
+*.pem

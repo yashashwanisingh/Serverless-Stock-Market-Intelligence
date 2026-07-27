@@ -1,0 +1,8 @@
+mysql -h stock-market-db.cbe240o8sruy.ap-south-1.rds.amazonaws.com -P 3306 -u admin -p --ssl-mode=VERIFY_IDENTITY --ssl-ca=./global-bundle.pem
+stock-market-db.cbe240o8sruy.ap-south-1.rds.amazonaws.com
+
+
+RDS Endpoint: stock-market-db.cbe240o8sruy.ap-south-1.rds.amazonaws.com
+Port: 3306
+Database: stock_market
+Username: admin
