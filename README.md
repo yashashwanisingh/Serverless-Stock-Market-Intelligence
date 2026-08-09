@@ -64,6 +64,12 @@ Serverless-Stock-Market-Intelligence/
 5. Load processed data into Amazon RDS
 6. Execute the complete workflow using AWS Step Functions
 
+## Power BI Dashboard
+
+The project includes an interactive Power BI dashboard connected to Amazon RDS MySQL.
+
+![Stock Market Dashboard](screenshots/Dashboard.png)
+
 ## Future Improvements
 
 - EventBridge Scheduler
