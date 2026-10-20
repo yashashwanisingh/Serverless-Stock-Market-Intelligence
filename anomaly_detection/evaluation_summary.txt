@@ -1,0 +1,34 @@
+﻿STOCK MARKET ANOMALY DETECTION - INITIAL RESULTS
+
+Dataset summary:
+- Records analysed: 145
+- Unique stocks: 29
+- Unique processing timestamps: 5
+
+Detection results:
+- Z-score flagged records: 7
+- Scaled Isolation Forest flagged records: 8
+- Flagged by both methods: 6
+
+Repeated-observation analysis:
+- Unique stocks among jointly flagged records: 4
+- Unique stock-value combinations among jointly flagged records: 4
+- Stocks: META, MSFT, AAPL, AMZN
+- Repeated observations may represent repeated data rather than distinct events.
+
+Methodology:
+- StandardScaler was applied to change_percent, price_change, and volume before Isolation Forest.
+- Z-score threshold: absolute score greater than or equal to 2.
+- Isolation Forest contamination parameter: 0.05.
+
+Visualization outputs:
+- method_comparison.png: compares detection counts.
+- percentage_change_anomalies.png: shows percentage change versus volume.
+- z_score_distribution.png: displays Z-score distribution and thresholds.
+
+Limitations:
+- Only five processing timestamps are available per stock.
+- The flags are potential anomalies, not verified market events.
+- The market_time column is unavailable.
+- No labelled ground truth is available, so accuracy, precision, and recall cannot yet be established.
+- The dataset is small and repeated observations limit interpretation.

@@ -9,3 +9,12 @@ __pycache__/
 # Environment / secrets
 .env
 *.pem
+# Local Python environment
+.venv/
+venv/
+
+# Local backups
+*_backup.py
+
+# Python cache
+__pycache__/
